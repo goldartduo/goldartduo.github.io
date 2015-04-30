@@ -36,6 +36,10 @@ a {
   max-width: 1030px;
   margin: 0 auto;
 }
+a,
+button {
+  outline: none;
+}
 a:active,
 a:hover {
   color: #446683;
@@ -59,6 +63,10 @@ a:hover {
 }
 .section-home {
   background-image: url(../img/home-bg.jpg);
+}
+.section-home video {
+  width: 100%;
+  outline: none;
 }
 #footer {
   position: absolute;
@@ -544,9 +552,6 @@ a:hover {
 .section-contacts .soc li:hover {
   border-color: #446683;
 }
-.section-contacts .soc li:hover i {
-  background-position-y: -20px;
-}
 .section-contacts .soc li a {
   display: inline-block;
   position: relative;
@@ -566,13 +571,25 @@ a:hover {
   background-repeat: no-repeat;
 }
 .section-contacts .soc li:nth-child(2) i {
-  background-position-x: -20px;
+  background-position: -20px 0;
 }
 .section-contacts .soc li:nth-child(3) i {
-  background-position-x: -40px;
+  background-position: -40px 0;
 }
 .section-contacts .soc li:nth-child(4) i {
-  background-position-x: -60px;
+  background-position: -60px 0;
+}
+.section-contacts .soc li:hover:nth-child(1) i {
+  background-position: 0 -20px;
+}
+.section-contacts .soc li:hover:nth-child(2) i {
+  background-position: -20px -20px;
+}
+.section-contacts .soc li:hover:nth-child(3) i {
+  background-position: -40px -20px;
+}
+.section-contacts .soc li:hover:nth-child(4) i {
+  background-position: -60px -20px;
 }
 #header {
   position: fixed;
@@ -637,6 +654,7 @@ a:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px 10px;
+  outline: none;
 }
 .nav li.active a {
   color: #446683;
