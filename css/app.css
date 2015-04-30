@@ -67,6 +67,7 @@ a:hover {
 .section-home video {
   width: 100%;
   outline: none;
+  cursor: pointer;
 }
 #footer {
   position: absolute;
