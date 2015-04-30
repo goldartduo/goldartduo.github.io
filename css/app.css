@@ -64,8 +64,22 @@ a:hover {
 .section-home {
   background-image: url(../img/home-bg.jpg);
 }
+.section-home .video_cnt {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
 .section-home video {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  min-height: 50%;
+  min-width: 50%;
   outline: none;
   cursor: pointer;
 }
@@ -737,6 +751,9 @@ body.nohover .section-contacts .soc li:hover i {
   body #header .logo img {
     height: 46px;
   }
+  body.fp-viewing-home #header .bg {
+    background-image: none;
+  }
   .nav {
     padding-left: 70px;
   }
@@ -764,6 +781,9 @@ body.nohover .section-contacts .soc li:hover i {
   html,
   body {
     font-size: 10px;
+  }
+  .section-home video {
+    display: none;
   }
   .nav {
     padding-top: 15px;
